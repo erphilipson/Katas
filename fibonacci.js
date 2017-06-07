@@ -3,12 +3,12 @@ let y = 1;
 let z = 0;
 let sum = 0;
 
-for (i = 0; i < 45; i++) {
+while (x < 4000000) {
   z = x + y;
   y = x;
   x = z;
 
-  if (x <= 4000000 && x % 2 == 0) {
+  if (x % 2 == 0) {
     sum = sum + x;
   }
 }
