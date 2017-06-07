@@ -1,15 +1,15 @@
-let x = 0;
-let y = 1;
-let z = 0;
+let firstNum = 0;
+let secondNum = 1;
+let transitionalNum = 0;
 let sum = 0;
 
-while (x < 4000000) {
-  z = x + y;
-  y = x;
-  x = z;
+while (firstNum < 4000000) {
+  transitionalNum = firstNum + secondNum;
+  secondNum = firstNum;
+  firstNum = transitionalNum;
 
-  if (x % 2 == 0) {
-    sum = sum + x;
+  if (firstNum % 2 == 0) {
+    sum = sum + firstNum;
   }
 }
 
