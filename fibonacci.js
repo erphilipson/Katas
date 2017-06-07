@@ -9,7 +9,7 @@ while (firstNum < 4000000) {
   firstNum = transitionalNum;
 
   if (firstNum % 2 == 0) {
-    sum = sum + firstNum;
+    sum += firstNum;
   }
 }
 
